@@ -59,7 +59,8 @@ def all_supplies_in_holidays(holiday_hash)
       v.each do |x,y|
         title = x.to_s.tr("_", " ").split 
        puts "  #{title.collect {|x| x.capitalize}.join(" ")}: #{y.join(", ")}" 
-    end	
+    end
+  end
  end
 
 def all_holidays_with_bbq(holiday_hash)
