@@ -57,6 +57,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.map do |seasons|
     seasons.map do |x|
       x
+    end
   end
 end
 
