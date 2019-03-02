@@ -45,7 +45,7 @@ def all_winter_holiday_supplies(holiday_hash)
   #new_array = []
   holiday_hash.map do |christmas, new_years|
     new_years.map do |i| 
-      new_array << i
+      i
     end
   end
   #new_array
