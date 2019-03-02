@@ -46,6 +46,7 @@ def all_winter_holiday_supplies(holiday_hash)
   holiday_hash.collect do |christmas, new_years|
     christmas.collect {|x| puts x}
     new_years.collect {|i| puts i}
+  end
 end
 
 def all_supplies_in_holidays(holiday_hash)
