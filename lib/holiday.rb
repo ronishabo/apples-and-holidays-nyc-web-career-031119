@@ -56,11 +56,8 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   new_data = ""
   holiday_hash.each do |seasons|
-    #data.each do |holiday|
       array = seasons.to_s.split(" ")
-      new_arr = array.join(', ')
-      new_data += new_arr
-    #end
+      new_data += array.join(', ')
   end
   new_data
 end
