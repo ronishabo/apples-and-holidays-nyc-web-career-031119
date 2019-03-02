@@ -68,7 +68,7 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   new_arr = []
   holiday_hash.each do |k, v|
-    k.each do |x, y|
+    v.each do |x, y|
       x
 end
 
