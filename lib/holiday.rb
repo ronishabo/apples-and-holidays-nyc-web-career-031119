@@ -62,7 +62,7 @@ def all_supplies_in_holidays(holiday_hash)
       new_data += new_arr
     end
   end
-  new_data
+  puts new_data
 end
 
 def all_holidays_with_bbq(holiday_hash)
