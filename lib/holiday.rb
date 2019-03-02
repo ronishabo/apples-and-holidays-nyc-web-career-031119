@@ -56,7 +56,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.map do |seasons|
     seasons.map do |x|
-      puts x
+      puts x.join
     end
   end
 end
