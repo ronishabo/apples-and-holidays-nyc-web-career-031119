@@ -70,7 +70,10 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |k, v|
     v.each do |x, y|
       if y.include?("BBQ")
-        return x
+        new_arr << x
+      end
+    end
+  new_arr
 end
 
 
