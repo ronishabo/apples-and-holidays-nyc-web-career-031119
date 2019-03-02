@@ -55,8 +55,8 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   new_data = ""
-  holiday_hash.each do |seasons|
-      array = seasons.to_s.split(" ")
+  holiday_hash.each do |seasons, holidays|
+      array = holidays.to_s.split(" ")
       new_data += array.join(', ')
   end
   new_data
