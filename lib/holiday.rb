@@ -48,7 +48,7 @@ def all_winter_holiday_supplies(holiday_hash)
       new_array << i
     end
   end
-  new_array.unshift
+  new_array.shift
   new_array
 end
 
