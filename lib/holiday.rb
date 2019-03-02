@@ -54,13 +54,13 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  holiday_hash.each do |k,v| #returning a bunch of nils with .map
-  # Winter:	    puts "#{k.capitalize}:"
-  #   Christmas: Lights, Wreath	    v.each do |x,y|
-  #   New Years: Party Hats	      title = x.to_s.tr("_", " ").split #.tr("_", " ") is new and looks like it replaces characters
-  puts "  #{title.collect {|x| x.capitalize}.join(" ")}: #{y.join(", ")}" 
-
- end	end
+  holiday_hash.each do |k,v| 
+    puts "#{k.capitalize}:"
+      v.each do |x,y|
+        title = x.to_s.tr("_", " ").split 
+       puts "  #{title.collect {|x| x.capitalize}.join(" ")}: #{y.join(", ")}" 
+    end	
+ end
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
