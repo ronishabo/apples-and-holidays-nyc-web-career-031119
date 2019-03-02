@@ -50,7 +50,6 @@ def all_winter_holiday_supplies(holiday_hash)
     new_years.each do |i| 
       new_array i
     end
-    end
   end
   new_array
 end
