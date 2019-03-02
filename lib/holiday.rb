@@ -54,8 +54,8 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  holiday_hash.map do |seasons, holiday|
-    holiday.map do |holiday|
+  holiday_hash.map do |seasons, data|
+    data.map do |holiday, |
       x.to_s
       puts x
     end
