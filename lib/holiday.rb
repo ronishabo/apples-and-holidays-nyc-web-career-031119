@@ -58,8 +58,10 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |seasons, data|
     data.each do |holiday, supply|
       holiday.to_s.split(" ")
+      new_data += holiday
     end
   end
+  new_data
 end
 
 def all_holidays_with_bbq(holiday_hash)
