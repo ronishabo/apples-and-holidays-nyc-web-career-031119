@@ -43,7 +43,9 @@ end
 def all_winter_holiday_supplies(holiday_hash)
   # return an array of all of the supplies that are used in the winter season
   
-  holiday_hash.collect  
+  holiday_hash.collect do |christmas, new_years|
+    christmas.collect {|x| puts x}
+    new_years.collect {|i| puts i}
 end
 
 def all_supplies_in_holidays(holiday_hash)
